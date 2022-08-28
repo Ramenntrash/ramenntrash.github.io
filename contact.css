@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+}
+
+body {
+    background-image: url(assets/contactbackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    padding: 40px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s;
+}
+
+nav ul li a:hover {
+    color: rgb(154, 154, 255);
+}
+
+.container {
+    display: flex;
+    padding-top: 100px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 600px) {
+    body {
+        background: url(assets/contactbackground.jpg);
+        background-repeat: no-repeat;
+        background-size: auto;
+    }
+    nav ul {
+        display: none;
+    }
+}
